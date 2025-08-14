@@ -135,6 +135,9 @@ dmypy.json
 .vscode/
 .idea/
 
-# Project specific
+# Project specific - NEVER commit actual password files
+*.csv
+bitwarden_export*.csv
 formatted_export.csv
 export_*.csv
+# Add any other sensitive files here

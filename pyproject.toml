@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.7"
 license = {text = "MIT"}
 authors = [
-    {name = "Your Name", email = "your.email@example.com"},
+    {name = "Kapil Thakare", email = "kapilthakare.cyberpunk@example.com"},
 ]
 classifiers = [
     "Development Status :: 4 - Beta",
@@ -32,9 +32,9 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/bitwarder"
-Repository = "https://github.com/yourusername/bitwarder.git"
-Issues = "https://github.com/yourusername/bitwarder/issues"
+Homepage = "https://github.com/kapilthakare-cyberpunk/bitwarden-csv-manager"
+Repository = "https://github.com/kapilthakare-cyberpunk/bitwarden-csv-manager.git"
+Issues = "https://github.com/kapilthakare-cyberpunk/bitwarden-csv-manager/issues"
 
 [project.scripts]
 bitwarden-csv-manager = "app:main"

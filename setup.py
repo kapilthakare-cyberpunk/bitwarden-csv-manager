@@ -9,12 +9,12 @@ with open("requirements.txt", "r", encoding="utf-8") as fh:
 setup(
     name="bitwarden-csv-manager",
     version="1.0.0",
-    author="Your Name",
-    author_email="your.email@example.com",
+    author="Kapil Thakare",
+    author_email="kapilthakare.cyberpunk@example.com",
     description="A tool to manage and filter Bitwarden CSV exports",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/bitwarder",
+    url="https://github.com/kapilthakare-cyberpunk/bitwarden-csv-manager",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 4 - Beta",

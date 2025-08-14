@@ -37,4 +37,5 @@ Repository = "https://github.com/kapilthakare-cyberpunk/bitwarden-csv-manager.gi
 Issues = "https://github.com/kapilthakare-cyberpunk/bitwarden-csv-manager/issues"
 
 [project.scripts]
-bitwarden-csv-manager = "app:main"
+bitwarden-csv-manager = "bitwarden_csv_manager.main:main"
+bitwarden-csv-gui = "bitwarden_csv_manager.gui:main"

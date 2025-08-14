@@ -35,7 +35,8 @@ setup(
     install_requires=requirements,
     entry_points={
         "console_scripts": [
-            "bitwarden-csv-manager=app:main",
+            "bitwarden-csv-manager=bitwarden_csv_manager.main:main",
+            "bitwarden-csv-gui=bitwarden_csv_manager.gui:main",
         ],
     },
     include_package_data=True,

@@ -1,0 +1,5 @@
+folder,favorite,type,name,notes,fields,reprompt,login_uri,login_username,login_password,login_totp
+Personal,0,login,Example Bank,Banking account example,,0,https://bank.example.com,user@example.com,password123,
+Work,1,login,Work Email,Corporate email access,,0,https://mail.company.com,john.doe@company.com,SecurePass456!,
+,0,login,Social Media,Personal social account,,0,https://social.example.com,myusername,mypassword789,
+Personal,0,secure_note,WiFi Password,Home network credentials,"Network: MyHome, Password: WiFi123!",0,,,

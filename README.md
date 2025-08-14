@@ -1,48 +1,148 @@
 # Bitwarden CSV Data Management Tool
 
-This project is a Python application to manage and filter data from Bitwarden CSV exports. It provides functionalities to load, filter, and export password data in various formats.
+This project provides both command-line and GUI tools to manage and filter data from Bitwarden CSV exports. It helps you format, filter, and export password data safely and efficiently.
 
-## Features
+## ⚠️ SECURITY WARNING
 
-- Load data from Bitwarden CSV export files
-- Filter data based on user-defined criteria (by any column)
-- Export filtered data to new CSV files
-- Reformat exports to match ideal Bitwarden import format
-- Interactive command-line interface
+**NEVER commit actual password files to version control!** This tool is designed to work with your personal Bitwarden exports locally. Your actual password database should remain private and secure.
 
-## Requirements
+## 🎯 Features
 
-- Python 3.7+
-- pandas
+- **🖥️ User-Friendly GUI** - Easy-to-use graphical interface
+- **💻 Command-Line Interface** - For advanced users and automation
+- **🔍 Smart Filtering** - Filter data by any column with case-insensitive search
+- **✨ Perfect Formatting** - Auto-format exports for seamless Bitwarden import
+- **🔒 Local Processing** - All data stays on your computer
+- **📊 Data Preview** - View your data before processing
+- **⚡ Fast Performance** - Handle large datasets efficiently
 
-## Setup
+## 🚀 Quick Start (GUI - Recommended)
 
-1. Install the required Python packages:
-
+1. **Install dependencies:**
    ```bash
-   pip install -r requirements.txt
+   pip install pandas
    ```
 
-2. Ensure your Bitwarden export file is named `bitwarden_export_final_backup_20250807131034.csv` or update the filename in `app.py`
+2. **Launch the GUI:**
+   ```bash
+   python gui_app.py
+   ```
+   Or use the launcher:
+   ```bash
+   python run_gui.py
+   ```
 
-3. Run the application:
+3. **Use the application:**
+   - Click "Browse for CSV File" to select your Bitwarden export
+   - Preview your data
+   - Use "Filter Data" to search and filter entries
+   - Click "Format for Bitwarden" to create a perfectly formatted export
 
+## 💻 Command Line Usage
+
+For advanced users who prefer the command line:
+
+1. **Update the filename** in `app.py`:
+   ```python
+   csv_file = 'your_actual_export_filename.csv'  # Update this line
+   ```
+
+2. **Run the application:**
    ```bash
    python app.py
    ```
 
-## Usage
+## 📋 Requirements
 
-The application provides three main options:
+- Python 3.7+
+- pandas library
+- tkinter (included with Python)
 
-1. **Filter and Export**: Search through your password database by any column (name, login_uri, folder, etc.) and export matching results
-2. **Export in Ideal Format**: Reformat your entire database to match the ideal Bitwarden import structure
-3. **Exit**: Close the application
+## 🛠️ Installation
 
-## Files
+```bash
+# Clone the repository
+git clone https://github.com/kapilthakare-cyberpunk/bitwarden-csv-manager.git
 
-- `app.py` - Main application script
+# Navigate to the directory
+cd bitwarden-csv-manager
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the GUI
+python gui_app.py
+```
+
+## 📁 Files Structure
+
+- `gui_app.py` - **Main GUI application** (recommended)
+- `app.py` - Command-line version
+- `run_gui.py` - Simple GUI launcher
 - `requirements.txt` - Python dependencies
-- `bitwarden_export_final_backup_20250807131034.csv` - Your Bitwarden export (input)
+- `sample_bitwarden_export.csv` - Example file format (safe dummy data)
 - `ideal_bitwarden_export.csv` - Template for ideal export format
-- `formatted_export.csv` - Output file for reformatted exports
+
+## 🎯 GUI Features
+
+### 🔍 Filter Data
+- Search by any column (name, folder, URI, etc.)
+- Case-sensitive or case-insensitive search
+- Instant preview of filtered results
+- Save filtered data to new CSV
+
+### ✨ Format for Bitwarden
+- Automatically reorder columns for perfect Bitwarden compatibility
+- Handle missing columns gracefully
+- Clean up data formatting
+- Ready-to-import CSV output
+
+### 📊 Data Preview
+- View your password data safely
+- Truncated display for security
+- Column-based browsing
+- Real-time record counts
+
+## 🔒 Security Best Practices
+
+- ✅ Use this tool locally only
+- ✅ Keep your actual password exports out of version control
+- ✅ Use strong, unique passwords for your Bitwarden vault
+- ✅ Enable two-factor authentication on your Bitwarden account
+- ✅ The GUI shows security warnings
+- ❌ Never share your actual password database
+- ❌ Never commit real password files to git repositories
+- ❌ Never upload password files to online services
+
+## 🆘 Troubleshooting
+
+### GUI Won't Start
+```bash
+# Make sure you have tkinter installed (usually comes with Python)
+python -c "import tkinter; print('tkinter available')"
+
+# Install pandas if missing
+pip install pandas
+```
+
+### "No module named pandas"
+```bash
+pip install pandas
+```
+
+### File Won't Load
+- Ensure your CSV file is a valid Bitwarden export
+- Check that the file isn't corrupted
+- Verify file permissions
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
+
+## 📜 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.

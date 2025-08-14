@@ -137,6 +137,8 @@ dmypy.json
 
 # Project specific - NEVER commit actual password files
 *.csv
+!sample_bitwarden_export.csv
+!ideal_bitwarden_export.csv
 bitwarden_export*.csv
 formatted_export.csv
 export_*.csv
